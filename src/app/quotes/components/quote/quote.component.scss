@@ -1,0 +1,46 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+
+  th {
+    text-align: start;
+  }
+
+  tr:hover {
+    td {
+      background-color: #f8f9fc;
+    }
+  }
+
+  td {
+    padding-left: 5px;
+    color: #5e636e;
+    font-size: 13px;
+
+    &:first-child {
+      color: #8f96a3;
+    }
+    
+    &:not(:first-child) {
+      text-align: end;
+    }
+  }
+
+  .odd {
+    td {
+      border-top: 1px solid #000;
+      padding-top: 5px;
+    }
+  }
+
+  .even {
+    td {
+      padding-bottom: 5px;
+    }
+  }
+}
